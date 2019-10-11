@@ -24,22 +24,14 @@ if (isset($_GET['Message'])) {
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
 
-                        <form id="login-form" class="form" action="loginDB.php" method="post">
-                            <h3 class="text-center text-info">Iniciar Sesión</h3>
+                        <form id="login-form" class="form" action="changePasswordDB.php" method="post">
+                            <h3 class="text-center text-info">Cambiar contraseña</h3>
                             <div class="form-group">
-                                <label for="username" class="text-info">Nombre de Usuario:</label><br>
-                                <input type="text" name="username" id="username" class="form-control">
+                                <label for="username" class="text-info">Nueva contraseña:</label><br>
+                                <input type="password" name="newPassword" id="newPassword" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="password" class="text-info">Contraseña:</label><br>
-                                <input type="password" name="password" id="password" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
-                                <input class="btn btn-info btn-block" type="submit" name="submit" class="btn btn-info btn-md" value="Ingresar">
-                            </div>
-                            <div id="register-link" class="text-right">
-                                <a href="register.php" class="text-info">Registrarse</a>
+                                <input class="btn btn-info btn-block" type="submit" name="submit" class="btn btn-info btn-md" value="Continuar">
                             </div>
                         </form>
                     </div>

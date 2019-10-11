@@ -1,3 +1,10 @@
+<?php
+
+if (isset($_GET['Message'])) {
+    print '<script type="text/javascript">alert("' . $_GET['Message'] . '");</script>';
+}
+ ?>
+ 
 <!doctype html>
 <html lang="en">
   <head>
